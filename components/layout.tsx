@@ -1,11 +1,18 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 const name = "Squaddo";
 export const siteTitle = "Squaddo Demo";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className="my-8 p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg space-y-4">
       <Head>
